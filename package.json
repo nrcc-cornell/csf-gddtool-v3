@@ -4,7 +4,7 @@
   "homepage": "http://tools.climatesmartfarming.org/gddtool_react_v3",
   "private": true,
   "devDependencies": {
-    "custom-react-scripts": "0.2.1"
+    "custom-react-scripts": "^0.2.2"
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
