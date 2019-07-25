@@ -38,7 +38,7 @@ class DisplayTrend extends Component {
             var data = this.props.store.app.getChartData
             let year = this.props.store.app.getPlantingYear
 
-            let lastDayOfSeason = moment(year+'-10-31', 'YYYY-MM-DD')
+            let lastDayOfSeason = moment(year+'-11-15', 'YYYY-MM-DD')
             let idxFirstFcst = data.dates_selected_year.length
             let firstFcstDate = null
             if (data.firstFcstDate==="") {
@@ -55,7 +55,7 @@ class DisplayTrend extends Component {
 
             const getXaxisMax = () => {
                 //let endOfSeason = moment.utc(year.toString()+'-11-01','YYYY-MM-DD')
-                let endOfSeason = moment.utc(year.toString()+'-10-31','YYYY-MM-DD')
+                let endOfSeason = moment.utc(year.toString()+'-11-15','YYYY-MM-DD')
                 let endOfData = moment.utc(data.dates_selected_year[data.dates_selected_year.length-1],'YYYY-MM-DD')
                 if ( endOfData > endOfSeason ) {
                     return endOfSeason

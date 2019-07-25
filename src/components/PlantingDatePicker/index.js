@@ -61,7 +61,7 @@ class PlantingDatePicker extends Component {
     if (this.props.store.app.latestSelectableYear === thisYear) {
         return moment()
     } else {
-        return moment(this.props.store.app.latestSelectableYear.toString()+"-10-31")
+        return moment(this.props.store.app.latestSelectableYear.toString()+"-11-15")
     }
   }
 
