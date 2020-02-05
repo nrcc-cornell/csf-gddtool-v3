@@ -152,13 +152,22 @@ The tool provides data at the county level to show local changes and impacts. Th
     // New seasons will start on Mar 1. Until then, the previous season is active. ----
     // -----------------------------------------------------------------------------------
     @computed get latestSelectableYear() {
-        let thisMonth = moment().month();
+        // code for new season on Jan 10
+        let thisDayOfYear = moment().dayOfYear();
         let thisYear = moment().year();
-        if (thisMonth===0 || thisMonth===1) {
+        if (thisDayOfYear<10) {
             return thisYear-1
         } else {
             return thisYear
         }
+        // code for new season on Mar 1
+        //let thisMonth = moment().month();
+        //let thisYear = moment().year();
+        //if (thisMonth===0 || thisMonth===1) {
+        //    return thisYear-1
+        //} else {
+        //    return thisYear
+        //}
     };
 
     // -----------------------------------------------------------------------------------
