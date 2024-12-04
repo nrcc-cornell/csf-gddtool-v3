@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "highcharts": "^6.1.4",
+    "highcharts": "^9.0.0",
     "highcharts-exporting": "^0.1.7",
     "highcharts-more": "^0.1.7",
     "jquery": "^3.3.1",
